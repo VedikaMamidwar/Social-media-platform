@@ -64,10 +64,7 @@ function App() {
           element={<Explore />}
         />
 
-        <Route
-          path="/post/:id"
-          element={<SinglePost />}
-        />
+
 
         <Route
           path="/profile"
@@ -98,9 +95,13 @@ function App() {
 
         <Route
           path="/post/:id"
-          element={<PostDetails />}
+          element={<SinglePost />}
         />
 
+        <Route
+          path="/post-details/:id"
+          element={<PostDetails />}
+        />
 
         <Route
           path="/notifications"
